@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gupta Lab - Trusted Blood Testing Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .animate-bounce-slow {
+            animation: bounce 3s infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-teal-700 text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold tracking-wide">Gupta Lab</h1>
+            <div class="text-sm">
+                Call Us: <span class="font-semibold text-white">+91 90224 09723</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-teal-100 py-16">
+        <div class="max-w-6xl mx-auto text-center px-4">
+            <div class="flex justify-center mb-6">
+                <img src="https://cdn-icons-png.flaticon.com/512/2738/2738996.png" alt="Gupta Lab Logo"
+                    class="w-20 h-20">
+            </div>
+            <h2 class="text-4xl font-bold mb-4 text-teal-900">Trusted Blood Testing Services</h2>
+            <p class="text-lg text-gray-700 mb-6">Accurate. Affordable. Certified. Book your appointment at Gupta Lab
+                today.</p>
+            <button onclick="bookNow()"
+                class="bg-teal-700 hover:bg-teal-800 text-white py-2 px-6 rounded-xl text-lg transition duration-300">Book
+                Appointment</button>
+        </div>
+    </section>
+
+    <!-- Stats with Animation -->
+    <section class="py-12 bg-white">
+        <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+            <div>
+                <h3 id="testCount" class="text-3xl font-bold text-teal-700">0</h3>
+                <p class="text-gray-600 mt-2">Tests Completed</p>
+            </div>
+            <div>
+                <h3 id="availability" class="text-3xl font-bold text-teal-700">0</h3>
+                <p class="text-gray-600 mt-2">Appointments Available</p>
+            </div>
+            <div>
+                <h3 id="accuracy" class="text-3xl font-bold text-teal-700">0%</h3>
+                <p class="text-gray-600 mt-2">Report Accuracy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="py-12 bg-gray-100">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-8 text-teal-800">Our Popular Tests</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:scale-105 hover:bg-teal-50 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-semibold text-teal-700">Complete Blood Count (CBC)</h3>
+                    <p class="text-sm mt-2 text-gray-600">Comprehensive blood health analysis.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:scale-105 hover:bg-teal-50 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-semibold text-teal-700">Liver Function Test (LFT)</h3>
+                    <p class="text-sm mt-2 text-gray-600">Monitor liver health and functions.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:scale-105 hover:bg-teal-50 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-semibold text-teal-700">Diabetes Test</h3>
+                    <p class="text-sm mt-2 text-gray-600">Check and monitor blood glucose levels.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:scale-105 hover:bg-teal-50 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-semibold text-teal-700">Thyroid Profile</h3>
+                    <p class="text-sm mt-2 text-gray-600">T3, T4, and TSH hormone levels testing.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:scale-105 hover:bg-teal-50 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-semibold text-teal-700">Vitamin D Test</h3>
+                    <p class="text-sm mt-2 text-gray-600">Identify Vitamin D deficiencies accurately.</p>
+                </div>
+                <div
+                    class="bg-white p-6 rounded-xl shadow-md hover:scale-105 hover:bg-teal-50 hover:shadow-xl transition-all duration-300">
+                    <h3 class="text-lg font-semibold text-teal-700">Lipid Profile</h3>
+                    <p class="text-sm mt-2 text-gray-600">Cholesterol & triglyceride health check.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Home Collection -->
+    <section class="py-12 bg-gradient-to-r from-teal-50 via-white to-teal-50">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-10">
+            <div class="w-full md:w-1/2 flex justify-center">
+                <img src="https://cdn-icons-png.flaticon.com/512/924/924915.png" alt="Home Collection"
+                    class="w-48 h-48 animate-bounce-slow" />
+            </div>
+            <div class="w-full md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-teal-800 mb-4">Free Home Sample Collection</h2>
+                <p class="text-gray-700 mb-6 text-lg">
+                    Can’t visit the lab? We come to you! Gupta Lab offers <span class="font-semibold text-teal-700">free
+                        home blood sample collection</span> by certified professionals, ensuring safety, convenience,
+                    and accuracy from your doorstep.
+                </p>
+                <button onclick="bookNow()"
+                    class="bg-teal-700 hover:bg-teal-800 text-white py-2 px-6 rounded-xl text-lg transition duration-300">
+                    Schedule Home Pickup
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="bg-white py-12">
+        <div class="max-w-xl mx-auto px-4">
+            <h2 class="text-2xl font-bold text-center mb-6 text-teal-800">Book Your Appointment</h2>
+            <form class="space-y-4">
+                <input type="text" placeholder="Full Name" class="w-full border p-3 rounded-lg" required />
+                <input type="email" placeholder="Email Address" class="w-full border p-3 rounded-lg" required />
+                <input type="tel" placeholder="Phone Number" class="w-full border p-3 rounded-lg" required />
+                <textarea placeholder="Preferred Date & Time" class="w-full border p-3 rounded-lg" rows="4"
+                    required></textarea>
+                <button type="submit"
+                    class="w-full bg-teal-700 text-white py-3 rounded-lg hover:bg-teal-800 transition duration-300">Submit
+                    Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center text-sm">
+        © 2025 Gupta Lab. All rights reserved.
+    </footer>
+
+    <!-- JS for Counters and Scroll -->
+    <script>
+        function bookNow() {
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+
+        function animateCounter(id, end, suffix = '', duration = 1000) {
+            const el = document.getElementById(id);
+            let start = 0;
+            const stepTime = Math.abs(Math.floor(duration / end));
+            const timer = setInterval(() => {
+                start += 1;
+                el.textContent = `${start}${suffix}`;
+                if (start >= end) {
+                    clearInterval(timer);
+                    el.textContent = `${end.toLocaleString()}${suffix}`;
+                }
+            }, stepTime);
+        }
+
+        window.onload = () => {
+            animateCounter('testCount', 200, '+');
+            animateCounter('availability', 24, '/7');
+            animateCounter('accuracy', 99.9, '%');
+        };
+    </script>
+</body>
+
+</html>
